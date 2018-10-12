@@ -1,0 +1,20 @@
+@media (min-width: 1280px) {
+  .comment {
+    position: relative;
+    width: 255px;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+  }
+
+  .comment__default {
+    color: #666666;
+  }
+
+  .comment__hover {
+    display: none;
+    position: absolute;
+    color: #e62e7a;
+    top: 0;
+  }
+}
