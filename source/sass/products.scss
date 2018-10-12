@@ -1,7 +1,7 @@
 @media (min-width: 1280px) {
   .products {
     width: 1280px;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .products__subtitle {
@@ -9,7 +9,7 @@
     font-family: "Exo 2.0 Thin";
     font-size: 36px;
     color: #ffffff;
-    margin: 42px auto 30px auto;
+    margin: 42px auto 29px auto;
     text-align: center;
   }
 
@@ -32,6 +32,7 @@
 
   .products__item {
     margin-left: 90px;
+    margin-bottom: 95px;
 
     &:first-child,
     &:nth-child(4n) {
