@@ -1,28 +1,8 @@
-@font-face {
-  font-family: "Exo 2.0 Thin";
-  src: url("../fonts/Exo2.0-Thin.otf") format("opentype");
-}
-
-html,
-body {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.2;
-  color: #000000;
-  background-color: #908d8d;
-  background-image: url("../img/Pattern.png");
-  background-size: cover;
-}
-
-@import "comment";
-@import "desc";
-@import "footer";
-@import "page";
-@import "param";
-@import "product";
-@import "products";
-@import "visually-hidden";
+@import "global";
+@import "blocks/comment";
+@import "blocks/desc";
+@import "blocks/footer";
+@import "blocks/page";
+@import "blocks/param";
+@import "blocks/product";
+@import "blocks/products";

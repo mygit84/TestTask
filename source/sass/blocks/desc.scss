@@ -1,0 +1,13 @@
+.desc {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  margin: 0;
+  padding-bottom: 210px;
+  line-height: 16px;
+  color: #666666;
+
+  &--high {
+    padding-bottom: 194px;
+  }
+}
