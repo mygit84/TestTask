@@ -3,11 +3,15 @@
   flex-direction: column;
   width: 135px;
   margin: 0;
-  padding-bottom: 210px;
+  padding-bottom: 212px;
   line-height: 16px;
-  color: #666666;
+  color: rgb(102, 102, 102);
 
   &--high {
-    padding-bottom: 194px;
+    padding-bottom: 196px;
+  }
+
+  &--disabled {
+    opacity: 0.5;
   }
 }

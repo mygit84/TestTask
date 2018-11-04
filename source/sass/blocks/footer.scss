@@ -1,60 +1,63 @@
+.footer {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
 
-  .footer {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 24px;
+.footer__item-default {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 300px;
+  justify-content: flex-start;
+  color: #ffffff;
+
+  &--hide {
+    display: none;
   }
+}
 
-  .footer__item {
-    text-align: center;
+.footer__item-selected {
+  display: none;
+  width: 300px;
+  content: "";
+  position: absolute;
+  top: 0;
+  color: #ffffff;
 
-    &--default {
-      //display: none;
-      content: "";
-      position: absolute;
-      display: flex;
-      width: 300px;
-      justify-content: flex-start;
-      color: #ffffff;
-    }
-
-    &--selected {
-    //  display: block;
-      display: none;
-      width: 300px;
-      content: "";
-      position: absolute;
-      top: 0;
-      color: #ffffff;
-    }
-
-    &--disabled {
-      //display: block;
-      display: none;
-      width: 280px;
-      content: "";
-      position: absolute;
-      left: 15px;
-      color: #ffff66;
-    }
-  }
-
-  .footer__text {
-    margin-right: 3px;
-  }
-
-  .footer__link {
+  &--show {
     display: block;
-    width: 40px;
-    position: relative;
-    color: #1698d9;
-    text-decoration: none;
-    border-bottom: 1px dashed #1698d9;
   }
+}
 
+.footer__item-disabled {
+  display: none;
+  width: 280px;
+  content: "";
+  position: absolute;
+  color: #ffff66;
+
+  &--show {
+    display: block;
+  }
+}
+
+.footer__text {
+  margin-right: 3px;
+}
+
+.footer__link {
+  display: block;
+  width: 40px;
+  position: relative;
+  color: #1698d9;
+  text-decoration: none;
+  border-bottom: 1px dashed #1698d9;
+}
 
 @media (min-width: 1280px) {
   .footer {
@@ -63,27 +66,19 @@
     line-height: 16px;
   }
 
-  .footer__item {
+  .footer__item-default {
+    width: 212px;
+    left: 50px;
+  }
 
-    &--default {
-      width: 212px;
-      //display: none;
-      left: 50px;
-    }
+  .footer__item-selected {
+    width: 320px;
+    right: 5px;
+  }
 
-    &--selected {
-      //display: block;
-      width: 320px;
-      display: none;
-    }
-
-    &--disabled {
-      //display: block;
-      width: 190px;
-      display: none;
-      left: -5px;
-
-    }
+  .footer__item-disabled {
+    width: 190px;
+    left: 59px;
   }
 
   .footer__text {

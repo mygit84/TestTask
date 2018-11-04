@@ -12,6 +12,22 @@
   text-align: center;
   background-color: #1698d9;
   border-radius: 50%;
+
+  &--hover {
+    background-color: #2ea8e6;
+  }
+
+  &--selected {
+    background-color: #d91667;
+  }
+
+  &--selected-hover {
+    background-color: #e62e7a;
+  }
+
+  &--disabled {
+    background-color: #b3b3b3;
+  }
 }
 
 .param__value {
