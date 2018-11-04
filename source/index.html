@@ -4,22 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Покорми кота</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
 
   <body class="page">
-    <section class="products">
-      <p class="products__subtitle"> Ты сегодня покормил кота?</p>
-      <h1 class="products__title visually-hidden">Корм для кошек "Нямушка"</h1>
-      <div class="products__wrapper">
+    <div class="page__wrapper">
+      <section class="products">
+        <p class="products__subtitle"> Ты сегодня покормил кота?</p>
+        <h1 class="products__title visually-hidden">Корм для кошек "Нямушка"</h1>
         <ul class="products__list">
           <li class="products__item product">
             <div class="product__photo">
-              <ul class="product__comments comment">
-                <li class="comment__default">Сказочное заморское яство</li>
-                <li class="comment__hover">Котэ не одобряет?</li>
-              </ul>
+              <include src="source/templates/comment.html"></include>
               <h2 class="product__title">Нямушка</h2>
               <h3 class="product__subtitle">с фуа-гра</h3>
               <p class="product__desc desc">
@@ -32,22 +29,19 @@
               </p>
             </div>
             <ul class="product-footer footer">
-              <li class="footer__item footer__item--default">
+              <li class="footer__item-default">
                 <span class="footer__text">Чего сидишь? Порадуй котэ,</span>
                 <div class="footer__btn">
-                  <a href="#" class="footer__link">купи.</a>
+                  <a href="product-cart.html" class="footer__link">купи.</a>
                 </div>
               </li>
-              <li class="footer__item footer__item--selected">Печень утки разваренная с артишоками.</li>
-              <li class="footer__item footer__item--disabled">Печалька, с фуа-гра закончился.</li>
+              <li class="footer__item-selected">Печень утки разваренная с артишоками.</li>
+              <li class="footer__item-disabled">Печалька, с фуа-гра закончился.</li>
             </ul>
           </li>
-          <li class="products__item product">
+          <li class="products__item product product--selected">
             <div class="product__photo">
-              <ul class="product__comments comment">
-                <li class="comment__default">Сказочное заморское яство</li>
-                <li class="comment__hover">Котэ не одобряет?</li>
-              </ul>
+              <include src="source/templates/comment.html"></include>
               <h2 class="product__title">Нямушка</h2>
               <h3 class="product__subtitle">с рыбой</h3>
               <p class="product__desc desc">
@@ -60,25 +54,22 @@
               </p>
             </div>
             <ul class="product-footer footer">
-              <li class="footer__item footer__item--default">
+              <li class="footer__item-default">
                 <span class="footer__text">Чего сидишь? Порадуй котэ,</span>
                 <div class="footer__btn">
-                  <a href="#" class="footer__link">купи.</a>
+                  <a href="product-cart.html" class="footer__link">купи.</a>
                 </div>
               </li>
-              <li class="footer__item footer__item--selected">Головы щучьи с чесноком да свежайшая семгушка.</li>
-              <li class="footer__item footer__item--disabled">Печалька, с рыбой закончился.</li>
+              <li class="footer__item-selected">Головы щучьи с чесноком да свежайшая семгушка.</li>
+              <li class="footer__item-disabled">Печалька, с рыбой закончился.</li>
             </ul>
           </li>
-          <li class="products__item product">
+          <li class="products__item product product--disabled">
             <div class="product__photo">
-              <ul class="product__comments comment">
-                <li class="comment__default">Сказочное заморское яство</li>
-                <li class="comment__hover">Котэ не одобряет?</li>
-              </ul>
+              <include src="source/templates/comment.html"></include>
               <h2 class="product__title">Нямушка</h2>
               <h3 class="product__subtitle">с курой</h3>
-              <p class="product__desc product__desc--high desc">
+              <p class="product__desc desc desc--high">
                 <span class="desc__item"><b>100</b> порций</span>
                 <span class="desc__item"><b>5</b> мышей в подарок</span>
                 <span class="desc__item">заказчик доволен</span>
@@ -89,19 +80,21 @@
               </p>
             </div>
             <ul class="product-footer footer">
-              <li class="footer__item footer__item--default">
+              <li class="footer__item-default">
                 <span class="footer__text">Чего сидишь? Порадуй котэ,</span>
                 <div class="footer__btn">
-                  <a href="#" class="footer__link">купи.</a>
+                  <a href="product-cart.html" class="footer__link">купи.</a>
                 </div>
               </li>
-              <li class="footer__item footer__item--selected">Филе из цыплят с трюфелями в бульоне.</li>
-              <li class="footer__item footer__item--disabled">Печалька, с курой закончился.</li>
+              <li class="footer__item-selected">Филе из цыплят с трюфелями в бульоне.</li>
+              <li class="footer__item-disabled">Печалька, с курой закончился.</li>
             </ul>
           </li>
         </ul>
-      </div>
-    </section>
-
+      </section>
+    </div>
+    <script src="js/product-default.js"></script>
+    <script src="js/product-selected.js"></script>
+    <script src="js/product-disabled.js"></script>
   </body>
 </html>
