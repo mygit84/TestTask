@@ -2,13 +2,7 @@ $('.product__photo').on('mouseenter', function() {
 
   $(this).parents('.product').addClass('product--hover');
   $(this).find('.param').addClass('param--hover');
-
-  if ($(this).hasClass('item-photo-selected-hover') && $(this).parents('.product-item').hasClass('disabled')) {
-    $(this).find('.comment-hover').removeClass('buy-show');
-    $(this).find('.comment-default').removeClass('buy-hide');
-  }
 });
-
 
 $('.product__photo').on('mouseleave', function() {
 
